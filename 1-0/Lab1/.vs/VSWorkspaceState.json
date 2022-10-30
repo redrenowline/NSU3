@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CMakeProject1",
-    "\\out"
+    "\\CMakeProject1"
   ],
-  "SelectedNode": "\\CMakeProject1\\main.cpp",
+  "SelectedNode": "\\CMakeProject1\\BigInt.h",
   "PreviewInSolutionExplorer": false
 }
