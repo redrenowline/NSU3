@@ -1,0 +1,25 @@
+# ninja log v5
+2	690	6888190542651875	CMakeProject1/CMakeFiles/main.h.dir/main.cpp.obj	247a6cffc501e366
+11	3946	6888188662820291	CMakeProject1/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	e05f5186ea8595b
+17	2830	6888188651752013	CMakeProject1/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	39101cd91a6d5da4
+7	4776	6888209148733971	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	7dcc1f9172306356
+23	1903	6888188642481637	CMakeProject1/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	6e5f27653f2400f4
+25	2283	6888209123748352	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	5b16f9852cf45c9a
+691	928	6888190544497569	CMakeProject1/main.h.exe	2ae9554e14641b6a
+33	1651	6888188639904016	CMakeProject1/lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	8ccef23b9e965a47
+30	4561	6888209146555226	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	bead023ff88717f8
+28	3958	6888188662920234	CMakeProject1/lib/googletest-main/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	478d9e769a1877c1
+2	1036	6888210532108155	CMakeProject1/CMakeFiles/BigInt.dir/main.cpp.obj	d7904f77bfbc25e6
+6	2870	6888188652161786	CMakeProject1/lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	30a9076df1ef013a
+38	4042	6888188663869691	CMakeProject1/lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	f1c49f8e4daef147
+4777	4925	6888209149933305	lib/gmock_main.lib	c600f92fb6b31da5
+4517	4680	6888209147474699	lib/gmock.lib	247a8a465cc53e25
+4562	4718	6888209147904448	lib/gtest.lib	cdb1324b9156773
+4719	4787	6888209148873897	lib/gtest_main.lib	e52cdedc160a1d7c
+36	631	6888209106908040	CMakeProject1/CMakeFiles/BigInt.dir/BigInt.cpp.obj	f64822002daa0a81
+1037	1448	6888210535256554	CMakeProject1/BigInt.exe	8039fca8711d571f
+3	180	6888210746709656	build.ninja	6dfa3912f76caebe
+11	2410	6888209125067606	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	2ea0711bbf51b4d
+1	3369	6888209134682092	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	a719282d332d7d0a
+20	3456	6888209135561568	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	71fc2a4f5ef34c0d
+15	4516	6888209146045522	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	e4cf85c7a575b9fa

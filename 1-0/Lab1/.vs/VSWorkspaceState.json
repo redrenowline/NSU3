@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CMakeProject1",
+    "\\out"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\CMakeProject1\\main.cpp",
   "PreviewInSolutionExplorer": false
 }
