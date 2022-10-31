@@ -73,3 +73,41 @@ const BigInt BigInt::operator--(int) {
 	--(*this);
 	return cp;
 }
+
+BigInt& BigInt::operator=(const BigInt& arg) {
+	this->value = value;
+	this->sign = arg.sign;
+	return *this;
+}
+
+BigInt BigInt::operator~() const {
+	unsigned int n = this->value.size();
+	BigInt cp(*this);
+	for (int itr = 0; itr < n; itr++) {
+		cp.value[itr] = ~cp.value[itr];
+	}
+	return cp;
+}
+
+BigInt BigInt::operator+() const {  // unary +
+	return *this;
+}
+
+BigInt BigInt::operator-() const {  // unary -
+	BigInt cp(*this);
+	cp.sign = !cp.sign;
+	return cp;
+}
+
+BigInt& BigInt::operator-=(const BigInt& arg) {
+	(*this) += -arg;
+	return *this;
+}
+
+BigInt& BigInt::operator^=(const BigInt& arg) {
+	if (this->value.size() > arg.value.size()) arg.value.resize(this->value.size());
+	if (this->value.size() < arg.value.size()) this->value.resize(arg.value.size());
+}
+BigInt& operator%=(const BigInt&);
+BigInt& operator&=(const BigInt&);
+BigInt& operator|=(const BigInt&);
