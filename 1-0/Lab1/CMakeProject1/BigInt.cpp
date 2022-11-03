@@ -66,6 +66,7 @@ const BigInt BigInt::operator++(int) {
 
 BigInt& BigInt::operator--() {
 	*this += BigInt(-1);
+	return *this;
 }
 
 const BigInt BigInt::operator--(int) {
@@ -105,9 +106,104 @@ BigInt& BigInt::operator-=(const BigInt& arg) {
 }
 
 BigInt& BigInt::operator^=(const BigInt& arg) {
-	if (this->value.size() > arg.value.size()) arg.value.resize(this->value.size());
-	if (this->value.size() < arg.value.size()) this->value.resize(arg.value.size());
+	BigInt cp(arg);
+	if (this->value.size() > cp.value.size()) cp.value.resize(this->value.size());
+	if (this->value.size() < cp.value.size()) this->value.resize(cp.value.size());
+	unsigned long long n = this->value.size();
+	for (long long itr = 0; itr < n; itr++) {
+		this->value[itr] ^= cp.value[itr];
+	}
+	return *this;
 }
-BigInt& operator%=(const BigInt&);
-BigInt& operator&=(const BigInt&);
-BigInt& operator|=(const BigInt&);
+
+BigInt& BigInt::operator&=(const BigInt& arg) {
+	BigInt cp(arg);
+	if (this->value.size() > cp.value.size()) cp.value.resize(this->value.size());
+	if (this->value.size() < cp.value.size()) this->value.resize(cp.value.size());
+	unsigned long long n = this->value.size();
+	for (long long itr = 0; itr < n; itr++) {
+		this->value[itr] &= cp.value[itr];
+	}
+	return *this;
+}
+
+BigInt& BigInt::operator|=(const BigInt& arg) {
+	BigInt cp(arg);
+	if (this->value.size() > cp.value.size()) cp.value.resize(this->value.size());
+	if (this->value.size() < cp.value.size()) this->value.resize(cp.value.size());
+	unsigned long long n = this->value.size();
+	for (long long itr = 0; itr < n; itr++) {
+		this->value[itr] |= cp.value[itr];
+	}
+	return *this;
+}
+
+bool BigInt::operator==(const BigInt&arg) const {
+	if (arg.value.size() != this->value.size()) return false;
+	unsigned long long n = this->value.size();
+	for (unsigned long long itr = 0; itr < n; itr++) {
+		if (arg.value[itr] != this->value[itr]) return false;
+	}
+	return true;
+}
+
+bool BigInt::operator!=(const BigInt&arg) const {
+	if (arg.value.size() != this->value.size()) return true;
+	unsigned long long n = this->value.size();
+	for (unsigned long long itr = 0; itr < n; itr++) {
+		if (arg.value[itr] != this->value[itr]) return true;
+	}
+	return false;
+}
+
+bool BigInt::operator<(const BigInt&arg) const {
+	if (this->sign < arg.sign) return true;
+	if (this->sign > arg.sign) return false;
+	if (this->value.size() < arg.value.size()) return true;
+	if (this->value.size() > arg.value.size()) return false;
+	unsigned long long n = this->value.size();
+	return this->value[n - 1] < arg.value[n - 1];
+}
+
+bool BigInt::operator>(const BigInt&arg) const {
+	if (this->sign < arg.sign) return false;
+	if (this->sign > arg.sign) return true;
+	if (this->value.size() < arg.value.size()) return false;
+	if (this->value.size() > arg.value.size()) return true;
+	unsigned long long n = this->value.size();
+	return this->value[n - 1] > arg.value[n - 1];
+}
+
+bool BigInt::operator<=(const BigInt& arg) const {
+	if (this->sign < arg.sign) return true;
+	if (this->sign > arg.sign) return false;
+	if (this->value.size() < arg.value.size()) return true;
+	if (this->value.size() > arg.value.size()) return false;
+	unsigned long long n = this->value.size();
+	return this->value[n - 1] <= arg.value[n - 1];
+}
+
+bool BigInt::operator>=(const BigInt& arg) const {
+	if (this->sign < arg.sign) return false;
+	if (this->sign > arg.sign) return true;
+	if (this->value.size() < arg.value.size()) return false;
+	if (this->value.size() > arg.value.size()) return true;
+	unsigned long long n = this->value.size();
+	return this->value[n - 1] >= arg.value[n - 1];
+}
+
+size_t BigInt::size() const {
+	return sizeof(BigInt);
+}
+
+BigInt operator+(const BigInt&arg1, const BigInt&arg2) {
+	BigInt cp(arg1);
+	cp += arg2;
+	return cp;
+}
+
+BigInt operator-(const BigInt&arg1, const BigInt&arg2) {
+	BigInt cp(arg1);
+	cp -= arg2;
+	return cp;
+}
