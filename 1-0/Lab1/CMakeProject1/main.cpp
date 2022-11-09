@@ -14,7 +14,7 @@ TEST(basicConstructors, copy) {
 TEST(op, plus) {
 	BigInt bg1(10);
 	BigInt bg2(7);
-	EXPECT_TRUE(bg1+bg2 == BigInt(17));
+	EXPECT_TRUE(bg1 + bg2 == BigInt(17));
 }
 
 TEST(op, plus2) {
