@@ -50,18 +50,18 @@ The CXX compiler identification is MSVC, found in "D:/WORK/university2/1-0/NSU3/
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/MICROS~3/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_33ff9 && [1/2] Building C object CMakeFiles\cmTC_33ff9.dir\CMakeCCompilerABI.c.obj
+Run Build Command(s):C:/PROGRA~2/MICROS~3/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_70a2a && [1/2] Building C object CMakeFiles\cmTC_70a2a.dir\CMakeCCompilerABI.c.obj
 Примечание: включение файла:  D:\QtCreator\Tools\CMake_64\share\cmake-3.24\Modules\CMakeCompilerABI.h
-[2/2] Linking C executable cmTC_33ff9.exe
+[2/2] Linking C executable cmTC_70a2a.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/MICROS~3/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_ab4eb && [1/2] Building CXX object CMakeFiles\cmTC_ab4eb.dir\CMakeCXXCompilerABI.cpp.obj
+Run Build Command(s):C:/PROGRA~2/MICROS~3/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_38b29 && [1/2] Building CXX object CMakeFiles\cmTC_38b29.dir\CMakeCXXCompilerABI.cpp.obj
 Примечание: включение файла:  D:\QtCreator\Tools\CMake_64\share\cmake-3.24\Modules\CMakeCompilerABI.h
-[2/2] Linking CXX executable cmTC_ab4eb.exe
+[2/2] Linking CXX executable cmTC_38b29.exe
 
 
 
