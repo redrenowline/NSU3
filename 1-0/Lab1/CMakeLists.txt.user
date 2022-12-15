@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.2, 2022-12-15T08:47:37. -->
+<!-- Written by QtCreator 8.0.2, 2022-12-15T09:16:07. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -94,11 +94,19 @@
     <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:string4">Checked</value>
     <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:string5">Checked</value>
     <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t1">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t10">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t11">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t12">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t13">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t14">Checked</value>
     <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t2">Checked</value>
     <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t3">Checked</value>
     <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t4">Checked</value>
     <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t5">Checked</value>
     <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t6">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t7">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t8">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t9">Checked</value>
    </valuemap>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>
