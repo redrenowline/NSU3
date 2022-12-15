@@ -53,6 +53,10 @@ BigInt::~BigInt() {
 
 }
 
+BigInt::operator int() const{
+      return value[0];
+}
+
 BigInt& BigInt::operator+=(const BigInt& arg) {
 	BigInt cp(arg);
 	if (this->value.size() > cp.value.size()) cp.value.resize(this->value.size());
@@ -317,7 +321,7 @@ bool BigInt::operator>=(const BigInt& arg) const {
 }
 
 size_t BigInt::size() const {
-	return sizeof(BigInt);
+	return sizeof(BigInt) + value.size() * 4;
 }
 
 BigInt operator+(const BigInt&arg1, const BigInt&arg2) {
