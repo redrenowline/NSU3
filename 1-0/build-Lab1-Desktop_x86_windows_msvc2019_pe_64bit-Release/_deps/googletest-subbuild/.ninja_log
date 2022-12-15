@@ -1,0 +1,21 @@
+# ninja log v5
+3306	3392	6911477026057459	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	14155dabf3ca75f4
+1	94	6911476993055112	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	ed037eb0e219c1c5
+3480	3569	6911477027809496	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	eb7f0e2ad595d721
+3038	3127	6911477023389093	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	bc6dfc5e178c0c7d
+3127	3216	6911477024272899	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	1df14db64106fc58
+1	94	6911476993055112	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	ed037eb0e219c1c5
+95	3038	6911477022518713	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	3e3dc1a3eaa4a3a3
+3038	3127	6911477023389093	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	bc6dfc5e178c0c7d
+95	3038	6911477022518713	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	3e3dc1a3eaa4a3a3
+3127	3216	6911477024272899	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	1df14db64106fc58
+3216	3306	6911477025178449	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	48c9661dc98ff8b7
+3569	3684	6911477028988009	CMakeFiles/googletest-populate-complete	d8e88ea81f998464
+3216	3306	6911477025178449	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	48c9661dc98ff8b7
+3306	3392	6911477026057459	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	14155dabf3ca75f4
+3392	3480	6911477026940594	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	6de9f2f382132009
+3569	3684	6911477028988009	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	d8e88ea81f998464
+3392	3480	6911477026940594	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	6de9f2f382132009
+3480	3569	6911477027809496	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	eb7f0e2ad595d721
+3569	3684	6911477028988009	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	d8e88ea81f998464
+3569	3684	6911477028988009	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Release/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	d8e88ea81f998464

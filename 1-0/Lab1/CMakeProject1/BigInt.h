@@ -1,4 +1,6 @@
 #pragma once
+#include <limits.h>
+
 #include <string>
 #include <vector>
 
@@ -10,17 +12,18 @@ private:
 	std::vector<unsigned int> value;
 	bool sign;
 
-
+	 void deleteNulls();
+	 void div2();
 public:
 
 
 	BigInt();
 	BigInt(int);
-	BigInt(std::string); // бросать исключение std::invalid_argument при ошибке
+    BigInt(std::string);
 	BigInt(const BigInt&);
 	~BigInt();
 
-	BigInt& operator=(const BigInt&);  //возможно присваивание самому себе!
+	BigInt& operator=(const BigInt&);
 
 	BigInt operator~() const;
 
@@ -51,7 +54,8 @@ public:
 	operator int() const;
 	operator std::string() const;
 
-	size_t size() const;  // size in bytes
+
+    size_t size() const;
 };
 
 BigInt operator+(const BigInt&, const BigInt&);

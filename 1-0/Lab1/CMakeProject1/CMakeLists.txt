@@ -10,4 +10,3 @@ target_link_libraries(BigInt gtest gtest_main)
 
 include(GoogleTest)
 
-# TODO: Добавьте тесты и целевые объекты, если это необходимо.

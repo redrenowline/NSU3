@@ -1,0 +1,21 @@
+# ninja log v5
+4116	4245	6907300897336032	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	d3ae2bf9370c0d6
+1	125	6907300856251341	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	1039647e54eb3192
+1	125	6907300856251341	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	1039647e54eb3192
+3696	3876	6907300893529949	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	5b83249967b8d0b8
+126	3696	6907300891960809	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	24a4409480893db7
+126	3696	6907300891960809	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	24a4409480893db7
+3696	3876	6907300893529949	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	5b83249967b8d0b8
+3876	4006	6907300895059021	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	9c2b7b63cf6f9a9b
+3876	4006	6907300895059021	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	9c2b7b63cf6f9a9b
+4006	4116	6907300896158406	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	8d8bb647350ad4b
+4669	4930	6907300904263590	CMakeFiles/googletest-populate-complete	6c019df55e64b218
+4006	4116	6907300896158406	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	8d8bb647350ad4b
+4116	4245	6907300897336032	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	d3ae2bf9370c0d6
+4245	4520	6907300900164219	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	bd68d4d5ecf214c2
+4245	4520	6907300900164219	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	bd68d4d5ecf214c2
+4520	4669	6907300901688934	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	cd77d7d66d3f207f
+4520	4669	6907300901688934	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	cd77d7d66d3f207f
+4669	4930	6907300904263590	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	6c019df55e64b218
+4669	4930	6907300904263590	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	6c019df55e64b218
+4669	4930	6907300904263590	D:/WORK/university2/1-0/NSU3/1-0/build-Lab1-Desktop_x86_windows_msvc2019_pe_64bit-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	6c019df55e64b218
