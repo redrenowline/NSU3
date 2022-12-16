@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.2, 2022-12-15T16:37:51. -->
+<!-- Written by QtCreator 8.0.2, 2022-12-16T20:37:00. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -68,45 +68,45 @@
     <value type="bool" key="AutoTest.Framework.QtTest">true</value>
    </valuemap>
    <valuemap type="QVariantMap" key="AutoTest.CheckStates">
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:BinOperators">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:MainTests">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:Translations">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:UnOperators">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:basicConstructors">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:copy">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:div1">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:div2">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:minus">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:minus1">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:minus2">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:minus4">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:mod1">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:mod2">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:mult1">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:mult2">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:plus">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:plus2">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:rel1">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:rel2">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:string1">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:string2">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:string3">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:string4">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:string5">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t1">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t10">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t11">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t12">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t13">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t14">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t2">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t3">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t4">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t5">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t6">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t7">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t8">Checked</value>
-    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/1-0/Lab1/CMakeProject1/main.cpp:t9">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:BinOperators">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:MainTests">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:Translations">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:UnOperators">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:basicConstructors">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:copy">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:div1">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:div2">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:minus">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:minus1">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:minus2">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:minus4">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:mod1">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:mod2">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:mult1">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:mult2">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:plus">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:plus2">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:rel1">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:rel2">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:string1">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:string2">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:string3">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:string4">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:string5">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t1">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t10">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t11">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t12">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t13">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t14">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t2">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t3">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t4">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t5">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t6">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t7">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t8">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/WORK/university2/1-0/NSU3/Lab1/CMakeProject1/main.cpp:t9">Checked</value>
    </valuemap>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>

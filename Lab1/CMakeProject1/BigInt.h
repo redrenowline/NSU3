@@ -6,6 +6,8 @@
 
 #include <stdexcept>
 
+namespace LongArythm{
+
 class BigInt {
 
 private:
@@ -69,3 +71,5 @@ BigInt operator|(const BigInt&, const BigInt&);
 
 
 std::ostream& operator<<(std::ostream& o, const BigInt& i);
+
+}

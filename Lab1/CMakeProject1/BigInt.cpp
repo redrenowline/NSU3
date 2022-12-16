@@ -1,5 +1,6 @@
 #include "BigInt.h"
 
+namespace LongArythm{
 
 BigInt::BigInt() {
 	value.push_back(0);
@@ -399,4 +400,6 @@ std::ostream& operator<<(std::ostream& o, const BigInt& i){
       o << strl[i];
     }
     return o;
+}
+
 }
