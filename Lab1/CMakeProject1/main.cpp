@@ -15,12 +15,12 @@ TEST(basicConstructors, string1) {
     LongArythm::BigInt bg1("140000000000000000000000");
     LongArythm::BigInt bg2("140000000000000000000001");
     bg2 -= bg1;
-    EXPECT_TRUE(bg2 == BigInt(1));
+    EXPECT_TRUE(bg2 == LongArythm::BigInt(1));
 }
 
 TEST(basicConstructors, string2){
   LongArythm::BigInt bg1("-12");
-  EXPECT_TRUE(bg1 == BigInt(-12));
+  EXPECT_TRUE(bg1 == LongArythm::BigInt(-12));
 }
 
 TEST(basicConstructors, string3){
@@ -56,13 +56,13 @@ TEST(basicConstructors, string5){
 TEST(BinOperators, plus) {
 	LongArythm::BigInt bg1(10);
 	LongArythm::BigInt bg2(7);
-	EXPECT_TRUE(bg1 + bg2 == BigInt(17));
+	EXPECT_TRUE(bg1 + bg2 == LongArythm::BigInt(17));
 }
 
 TEST(BinOperators, plus2) {
 	LongArythm::BigInt bg1(10);
 	LongArythm::BigInt bg2(-112);
-	EXPECT_TRUE(bg1+bg2 == BigInt(10 - 112));
+	EXPECT_TRUE(bg1+bg2 == LongArythm::BigInt(10 - 112));
 }
 
 TEST(BinOperators, rel1){
