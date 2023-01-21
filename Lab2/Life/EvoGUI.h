@@ -5,9 +5,9 @@
 #include <QGraphicsScene>
 #include <QGuiApplication>
 
-#include "menugui.h"
+#include "MenuGUI.h"
 #include "MainGUI.h"
-#include "Command.h"
+#include "Strategy.h"
 
 class EvoGUI : public QWidget{
   Q_OBJECT

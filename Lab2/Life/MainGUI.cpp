@@ -22,6 +22,7 @@ void MainGUI::identLeftLayout(){
   enterItarations->setGeometry(ENTERITR_RECT);
   std::cout << "Everything has been identificated\n";
 }
+
 void MainGUI::identMainLayout(){
   viewScene = std::make_shared<QGraphicsView>(this);
   scene = std::make_shared<QGraphicsScene>();

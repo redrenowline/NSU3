@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "Field.h"
-#include "Command.h"
+#include "Strategy.h"
 #include "EvoGUI.h"
 
 class Core : public QObject{

@@ -15,7 +15,6 @@ public:
 
 };
 
-// Command for exiting
 class ExitStrategy: public Strategy{
 public:
   ExitStrategy();
@@ -23,7 +22,7 @@ public:
   void exec();
 };
 
-// Command which calculate next state of universum
+
 class NextTikStrategy: public Strategy{
 public:
   NextTikStrategy(std::shared_ptr<Field> f);
@@ -33,7 +32,7 @@ private:
   std::shared_ptr<Field> fd;
 };
 
-// Command which calculating some states of universum
+
 class NextTiksStrategy: public Strategy{
 public:
     NextTiksStrategy(std::shared_ptr<Field> f, unsigned int k = 1);
@@ -44,7 +43,7 @@ private:
   unsigned int num;
 };
 
-// Command which upload universum from file
+
 class UploadFieldStrategy: public Strategy{
 public:
   UploadFieldStrategy(std::shared_ptr<Field> f, std::string p);
@@ -55,7 +54,7 @@ private:
   std::string path;
 };
 
-// Command which save field to file
+
 class SaveFieldStrategy: public Strategy{
 public:
   SaveFieldStrategy(std::shared_ptr<Field> f, std::string s);
