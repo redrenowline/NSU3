@@ -1,10 +1,10 @@
 #include <QApplication>
 
-#include "Core.h"
+#include "EvoGUI.h"
 
 int main(int argc, char* argv[])
 {
   QApplication app(argc, argv);
-  Core *gui = new Core();
+  EvoGUI *gui = new EvoGUI();
   return app.exec();
 }

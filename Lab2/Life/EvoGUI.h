@@ -8,6 +8,7 @@
 #include "MenuGUI.h"
 #include "MainGUI.h"
 #include "Strategy.h"
+#include "Core.h"
 
 class EvoGUI : public QWidget{
   Q_OBJECT
@@ -18,6 +19,8 @@ public:
 private:
   std::unique_ptr<MenuGUI> menuGUI;
   std::unique_ptr<MainGUI> mainGUI;
+
+  std::unique_ptr<Core> core;
 
   void identMainGUI();
 
@@ -30,8 +33,4 @@ private slots:
   void addSaveStrategy();
   void addNextTikStrategy();
   void addNextTiksStrategy();
-
-signals:
-  void addStrategy(std::shared_ptr<Strategy>);
-
 };

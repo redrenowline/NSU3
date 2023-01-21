@@ -4,11 +4,10 @@
 
 Core::Core() {
   fd = std::make_shared<Field>();
-  gui = std::make_shared<EvoGUI>();
-  connect(gui.get(), SIGNAL(addStrategy(std::shared_ptr<Strategy>)), this, SLOT(executeStrategy(std::shared_ptr<Strategy>)));
+
 }
 
-void Core::executeStrategy(std::shared_ptr<Strategy> cmd){
+void Core::execStrategy(std::shared_ptr<Strategy> cmd){
   std::cout << "New strategy has been get\n";
   try{
     cmd->exec();
