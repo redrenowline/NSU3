@@ -10,7 +10,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-project ("EvoTest")
+project ("Life")
 
 
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
