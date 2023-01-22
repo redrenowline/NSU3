@@ -9,11 +9,7 @@ Core::Core() {
 
 void Core::execStrategy(std::shared_ptr<Strategy> cmd){
   std::cout << "New strategy has been get\n";
-  try{
-    cmd->exec();
-  }catch(std::exception e){
-    std::cerr << e.what();
-  }
+  cmd->exec();
 }
 
 std::shared_ptr<Field> Core::getField(){

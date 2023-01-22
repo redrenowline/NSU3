@@ -22,15 +22,21 @@ private:
 
   std::unique_ptr<Core> core;
 
-  void identMainGUI();
+  void identMainGUI(); // identification of Main Layout (contains scene)
+  void closeMainGUI(); // closing of Main Layout
+
+  void identMenuGUI(); // identification of Menu Layout (contains menu), start point for programm
+  void closeMenuGUI(); // closing of Menu Layout
 
   const char* DIALOGFILEOPEN = "Укажите файл с вселенной";
   const char* DIALOGFILETYPE = "Все файлы (*.*)";
 
 private slots:
-  void addExitStrategy();
-  void addUploadStrategy();
+  void addExitStrategy(); // creating ExitStrategy and try to execute that in the Core, the result is closing programm
+  void addUploadStrategy(); // creating UploadStrategy and try to execute that in the Core, the result is uploading field in the Core
   void addSaveStrategy();
   void addNextTikStrategy();
   void addNextTiksStrategy();
+
+  void UploadExamples();
 };

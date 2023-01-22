@@ -34,5 +34,6 @@ void UploadFieldStrategy::exec(){
 SaveFieldStrategy::SaveFieldStrategy(std::shared_ptr<Field> f, std::string s): fd(f), path(s){}
 
 void SaveFieldStrategy::exec(){
-
+  FieldSaver saver;
+  saver.save(this->path, *(fd.get()));
 }

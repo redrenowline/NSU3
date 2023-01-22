@@ -12,7 +12,7 @@ class FieldSaver{
 public:
   FieldSaver();
 
-  void save(std::string path);
+  void save(std::string path, Field &fd);
 
   const char* INDICATOR = "#Life 1.06";
   const char* NAMEINDICATOR = "#N";

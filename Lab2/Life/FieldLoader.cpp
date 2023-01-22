@@ -76,7 +76,6 @@ Specification FieldLoader::readRules(std::ifstream &fl) {
 
 Field FieldLoader::load(std::string path) {
   Specification t_sp;
-  std::cout << "File has been opened\n";
   std::ifstream fl;
   fl.open(path);
   if (!fl.is_open())

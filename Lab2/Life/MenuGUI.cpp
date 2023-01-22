@@ -1,4 +1,4 @@
-#include "menugui.h"
+#include "MenuGUI.h"
 
 MenuGUI::MenuGUI() : QWidget(){
   identButtons();
