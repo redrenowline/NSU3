@@ -24,7 +24,7 @@ void EvoGUI::identMainGUI(){
 }
 
 void EvoGUI::closeMainGUI(){
-
+  mainGUI->close();
 }
 
 void EvoGUI::addExitStrategy(){
@@ -36,9 +36,10 @@ void EvoGUI::addUploadStrategy(){
   try{
     core->execStrategy(std::make_shared<UploadFieldStrategy>(core->getField(), s));
   }catch(std::exception e){
+    std::cerr << e.what() << "\n";
     return;
   }
-  std::cerr << "Field has been uploaded from file " << s << "\n";
+  std::cout << "Field has been uploaded from file " << s << "\n";
   identMainGUI();
   closeMenuGUI();
 }
@@ -56,7 +57,11 @@ void EvoGUI::addNextTikStrategy(){
 }
 
 void EvoGUI::addNextTiksStrategy(){
-
+  try{
+    core->execStrategy(std::make_shared<NextTiksStrategy>(core->getField(), mainGUI->getTiksCount()));
+  }catch(std::exception e){
+    std::cerr << e.what() << "\n";
+  }
 }
 
 void EvoGUI::UploadExamples(){

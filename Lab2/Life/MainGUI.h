@@ -26,6 +26,8 @@ public:
 
   void drawCell(int x, int y, cType typ);
 
+  int getTiksCount();
+
 private:
 
   const char* TIKSCOUNT_CHAR = "Количество шагов:";

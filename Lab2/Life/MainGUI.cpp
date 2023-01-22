@@ -33,6 +33,18 @@ void MainGUI::identMainLayout(){
 }
 
 void MainGUI::drawCell(int x, int y, cType typ){
-  scene->clear();
   scene->addLine(x * 10, y * 10, (x + 1) * 10,  (y + 1) * 10,QPen(typ == cType::ALIVE ? Qt::black : Qt::white));
 }
+
+int MainGUI::getTiksCount(){
+    return enterItarations->text().toInt();
+}
+
+
+
+
+
+
+
+
+
