@@ -21,6 +21,8 @@ void EvoGUI::closeMenuGUI(){
 void EvoGUI::identMainGUI(){
   mainGUI = std::make_unique<MainGUI>();
   mainGUI->show();
+  connect(mainGUI->getNextTikBtn().get(), SIGNAL(released()), this, SLOT(addNextTikStrategy()));
+  connect(mainGUI->getNextTiksBtn().get(), SIGNAL(released()), this, SLOT(addNextTiksStrategy()));
 }
 
 void EvoGUI::closeMainGUI(){
@@ -40,8 +42,8 @@ void EvoGUI::addUploadStrategy(){
     return;
   }
   std::cout << "Field has been uploaded from file " << s << "\n";
-  identMainGUI();
   closeMenuGUI();
+  identMainGUI();
 }
 
 void EvoGUI::addSaveStrategy(){
@@ -65,6 +67,7 @@ void EvoGUI::addNextTiksStrategy(){
 }
 
 void EvoGUI::UploadExamples(){
+  std::string path;
 
 }
 

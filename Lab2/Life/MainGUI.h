@@ -28,6 +28,9 @@ public:
 
   int getTiksCount();
 
+  std::shared_ptr<QPushButton> getNextTikBtn();
+  std::shared_ptr<QPushButton> getNextTiksBtn();
+
 private:
 
   const char* TIKSCOUNT_CHAR = "Количество шагов:";

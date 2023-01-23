@@ -40,7 +40,13 @@ int MainGUI::getTiksCount(){
     return enterItarations->text().toInt();
 }
 
+std::shared_ptr<QPushButton> MainGUI::getNextTikBtn(){
+  return nextTikBtn;
+}
 
+std::shared_ptr<QPushButton> MainGUI::getNextTiksBtn(){
+  return NULL;
+}
 
 
 
