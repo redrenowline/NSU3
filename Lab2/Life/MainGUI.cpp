@@ -1,6 +1,6 @@
 #include "MainGUI.h"
 
-MainGUI::MainGUI()
+MainGUI::MainGUI(std::string n) : QWidget(), nam(n)
 {
   this->setGeometry(0,0,SCREEN_SIZE.width(), SCREEN_SIZE.height());
   this->setFixedSize(SCREEN_SIZE);
@@ -10,17 +10,25 @@ MainGUI::MainGUI()
 }
 
 void MainGUI::identLeftLayout(){
-  name = std::make_shared<QLabel>("Hello", this);
-  numlabel = std::make_shared<QLabel>("12", this);
+  name = std::make_shared<QLabel>(QString::fromStdString(nam), this);
   enterItarations = std::make_shared<QLineEdit>(this);
-  nextTikBtn = std::make_shared<QPushButton>();
+  nextTikBtn = std::make_shared<QPushButton>(this);
+  nextTiksBtn = std::make_shared<QPushButton>(this);
+  startTimerBtn = std::make_shared<QPushButton>(this);
+  stopTimerBtn = std::make_shared<QPushButton>(this);
 
   enterItarations->setValidator(new QIntValidator(0,100,this));
+  nextTikBtn->setText(NEXTTIKBTN_CHAR);
+  nextTiksBtn->setText(NEXTTIKSBTN_CHAR);
+  startTimerBtn->setText(STARTTIMER_CHAR);
+  stopTimerBtn->setText(STOPTIMER_CHAR);
 
   name->setGeometry(NAME_RECT);
-  numlabel->setGeometry(NUMLABEL_RECT);
   enterItarations->setGeometry(ENTERITR_RECT);
-  std::cout << "Everything has been identificated\n";
+  nextTikBtn->setGeometry(NEXTIKBTN_RECT);
+  nextTiksBtn->setGeometry(NEXTIKSBTN_RECT);
+  startTimerBtn->setGeometry(STARTTIMER_RECT);
+  stopTimerBtn->setGeometry(STOPTIMER_RECT);
 }
 
 void MainGUI::identMainLayout(){
@@ -32,8 +40,12 @@ void MainGUI::identMainLayout(){
   scene->setSceneRect(0,0,viewScene->width(), viewScene->height());
 }
 
-void MainGUI::drawCell(int x, int y, cType typ){
-  scene->addLine(x * 10, y * 10, (x + 1) * 10,  (y + 1) * 10,QPen(typ == cType::ALIVE ? Qt::black : Qt::white));
+void MainGUI::drawCell(int x, int y){
+  scene->addRect(QRect(x*10,y*10, 10, 10), QPen(Qt::black), QBrush(Qt::black));
+}
+
+void MainGUI::clearField(){
+  scene->clear();
 }
 
 int MainGUI::getTiksCount(){
@@ -45,10 +57,16 @@ std::shared_ptr<QPushButton> MainGUI::getNextTikBtn(){
 }
 
 std::shared_ptr<QPushButton> MainGUI::getNextTiksBtn(){
-  return NULL;
+  return nextTiksBtn;
 }
 
+std::shared_ptr<QPushButton> MainGUI::getStartTimerBtn(){
+  return startTimerBtn;
+}
 
+std::shared_ptr<QPushButton> MainGUI::getStopTimerBtn(){
+  return stopTimerBtn;
+}
 
 
 

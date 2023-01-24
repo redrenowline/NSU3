@@ -10,8 +10,8 @@ void EvoGUI::identMenuGUI(){
   menuGUI = std::make_unique<MenuGUI>();
   menuGUI->show();
   connect(menuGUI->GetExitBtn().get(), SIGNAL(released()), this, SLOT(addExitStrategy()));
-  connect(menuGUI->GetFileBtn().get(), SIGNAL(released()), this, SLOT(addUploadStrategy()));
-  connect(menuGUI->GetExampleBtn().get(), SIGNAL(released()), this, SLOT(UploadExamples()));
+  connect(menuGUI->GetFileBtn().get(), SIGNAL(released()), this, SLOT(UploadFromFile()));
+  connect(menuGUI->GetExampleBtn().get(), SIGNAL(released()), this, SLOT(showUploadExamples()));
 }
 
 void EvoGUI::closeMenuGUI(){
@@ -19,31 +19,69 @@ void EvoGUI::closeMenuGUI(){
 }
 
 void EvoGUI::identMainGUI(){
-  mainGUI = std::make_unique<MainGUI>();
+  mainGUI = std::make_unique<MainGUI>(core->getField()->title);
   mainGUI->show();
   connect(mainGUI->getNextTikBtn().get(), SIGNAL(released()), this, SLOT(addNextTikStrategy()));
   connect(mainGUI->getNextTiksBtn().get(), SIGNAL(released()), this, SLOT(addNextTiksStrategy()));
+  connect(mainGUI->getStartTimerBtn().get(), SIGNAL(released()), this, SLOT(startTimer()));
+  connect(mainGUI->getStopTimerBtn().get(), SIGNAL(released()), this, SLOT(stopTimer()));
 }
 
 void EvoGUI::closeMainGUI(){
   mainGUI->close();
 }
 
+void EvoGUI::identExamplesGUI(){
+  examplesGUI = std::make_unique<ExamplesGUI>();
+  examplesGUI->show();
+  connect(examplesGUI->getUploadExamplesBtn().get(), SIGNAL(released()), this, SLOT(UploadExamples()));
+}
+void EvoGUI::closeExamplesGUI(){
+  examplesGUI->close();
+}
+
+void EvoGUI::reDrawFieled(){
+  std::string mask = core->getField()->transparentField();
+  int height = core->getField()->getHeight();
+  int width = core->getField()->getWidth();
+  mainGUI->clearField();
+  for(int i = 0; i < width; i++){
+      for(int j = 0; j < height; j++){
+          if(mask[i * height + j] == core->getField()->ONE)
+            mainGUI->drawCell(i,j);
+        }
+    }
+  mainGUI->drawCell(50,50);
+}
+
+void EvoGUI::startTimer(){
+  timer = std::make_unique<QTimer>();
+  connect(timer.get(), SIGNAL(timeout()), this, SLOT(addNextTikStrategy()));
+  mainGUI->getNextTikBtn()->setEnabled(false);
+  mainGUI->getNextTiksBtn()->setEnabled(false);
+  timer->start(500);
+}
+
+void EvoGUI::stopTimer(){
+  timer->stop();
+  mainGUI->getNextTikBtn()->setEnabled(true);
+  mainGUI->getNextTiksBtn()->setEnabled(true);
+}
+
 void EvoGUI::addExitStrategy(){
   core->execStrategy(std::make_shared<ExitStrategy>());
 }
 
-void EvoGUI::addUploadStrategy(){
-  std::string s = QFileDialog::getOpenFileName(0, QObject::tr(DIALOGFILEOPEN), QDir::homePath(), QObject::tr(DIALOGFILETYPE)).toStdString();
+void EvoGUI::addUploadStrategy(std::string path){
   try{
-    core->execStrategy(std::make_shared<UploadFieldStrategy>(core->getField(), s));
+    core->execStrategy(std::make_shared<UploadFieldStrategy>(core->getField(), path));
   }catch(std::exception e){
     std::cerr << e.what() << "\n";
     return;
   }
-  std::cout << "Field has been uploaded from file " << s << "\n";
   closeMenuGUI();
   identMainGUI();
+  reDrawFieled();
 }
 
 void EvoGUI::addSaveStrategy(){
@@ -56,6 +94,7 @@ void EvoGUI::addNextTikStrategy(){
   }catch(std::exception e){
     std::cerr << e.what() << "\n";
   }
+  reDrawFieled();
 }
 
 void EvoGUI::addNextTiksStrategy(){
@@ -64,11 +103,23 @@ void EvoGUI::addNextTiksStrategy(){
   }catch(std::exception e){
     std::cerr << e.what() << "\n";
   }
+  reDrawFieled();
+}
+
+void EvoGUI::showUploadExamples(){
+  identExamplesGUI();
+  closeMenuGUI();
+}
+
+void EvoGUI::UploadFromFile(){
+  std::string s = QFileDialog::getOpenFileName(0, QObject::tr(DIALOGFILEOPEN), QDir::homePath(), QObject::tr(DIALOGFILETYPE)).toStdString();
+  addUploadStrategy(s);
 }
 
 void EvoGUI::UploadExamples(){
-  std::string path;
-
+  std::string s = examplesGUI->GetExamplePath();
+  addUploadStrategy(s);
+  closeExamplesGUI();
 }
 
 EvoGUI::~EvoGUI(){

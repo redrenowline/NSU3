@@ -43,7 +43,13 @@ public:
   unsigned int getWidth();
   cType getType();
 
+  std::string transparentField();
+
+  const static char ONE = '1';
+  const static char ZERO = '0';
+
 private:
+
   std::vector<std::vector<cType>> mass;
   unsigned int height, width;
 

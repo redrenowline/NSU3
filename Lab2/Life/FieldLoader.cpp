@@ -66,8 +66,10 @@ Specification FieldLoader::readRules(std::ifstream &fl) {
   while (t_num >= '0' && t_num <= '9' && tmp_s.size() != 0) {
     temp.push_back(t_num);
     tmp_s.erase(0, 1);
-    if (tmp_s.size() == 0)
+    if (tmp_s.size() == 0){
+        sp.setsrReason(temp);
       return sp;
+    }
     t_num = tmp_s[0];
   }
   sp.setsrReason(temp);
@@ -84,7 +86,7 @@ Field FieldLoader::load(std::string path) {
   checkIdentity(fl);
   std::string title = readTitle(fl);
   t_sp = readRules(fl);
-  Field res(100,100, t_sp);
+  Field res(50,50, t_sp);
   res.title = title;
   while (!fl.eof()) {
     unsigned int x, y;

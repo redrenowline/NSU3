@@ -11,8 +11,10 @@ Field::Field(unsigned int n,unsigned int m, Specification t_sp) {
   this->height = n;
   this->width = m;
   this->sp = t_sp;
+  mass = std::vector<std::vector<cType>>();
   mass.resize(n);
   for (int itr = 0; itr < n; itr++) {
+    mass[itr] = std::vector<cType>();
     mass[itr].resize(m);
     for (int j = 0; j < m; j++) {
       mass[itr][j] = cType::DEAD;
@@ -36,21 +38,18 @@ unsigned int Field::calcLocalicity(unsigned int x, unsigned int y) {
 
 bool Field::calcSurvivalability(unsigned int neigh) {
   for (int itr = 0; itr < sp.getsrSize(); itr++)
-    if (neigh == sp.getsrReason()[itr]) return true;
+    if (neigh == sp.getsrReason()[itr] - ZERO) return true;
   return false;
 }
 
 bool Field::calcBirth(unsigned int neigh) {
   for (int itr = 0; itr < sp.getsrSize(); itr++)
-    if (neigh == sp.getsrReason()[itr]) return true;
+    if (neigh == sp.getcrReason()[itr] - ZERO) return true;
   return false;
 }
 
 void Field::processing() {
-  std::vector<std::vector<cType>> cp_mass = mass;
-  for (unsigned int i = 0; i < height; i++)
-    for (unsigned int j = 0; j < width; j++)
-      cp_mass[i][j] = cType::DEAD;
+  std::vector<std::vector<cType>> cp_mass(mass);
 
   for (unsigned int i = 1; i < height - 1; i++)
     for (unsigned int j = 1; j < width - 1; j++) {
@@ -79,6 +78,17 @@ unsigned int Field::getHeight(){
 unsigned int Field::getWidth(){
   return width;
 }
+
+std::string Field::transparentField(){
+  std::string answer = "";
+  for(int i = 0; i < width; i++){
+    for(int j = 0; j  < height; j++){
+      answer += mass[i][j] == cType::ALIVE ? ONE : ZERO;
+    }
+  }
+  return answer;
+}
+
 Specification::Specification(){
 
 }
