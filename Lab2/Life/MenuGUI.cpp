@@ -1,5 +1,7 @@
 #include "MenuGUI.h"
 
+namespace Life{
+
 MenuGUI::MenuGUI() : QWidget(){
   identButtons();
   bottomLayout = std::make_shared<QVBoxLayout>();
@@ -39,4 +41,4 @@ std::shared_ptr<QPushButton> MenuGUI::GetExitBtn(){
   return exit_btn;
 }
 
-
+}

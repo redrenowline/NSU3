@@ -16,6 +16,8 @@
 
 #include "Cells.h"
 
+namespace Life{
+
 class MainGUI : public QWidget
 {
   Q_OBJECT
@@ -86,5 +88,6 @@ private:
   void identMainLayout();
 
 };
+}
 
 #endif // MAINGUI_H

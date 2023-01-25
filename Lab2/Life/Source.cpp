@@ -11,12 +11,12 @@ int main(int argc, char* argv[])
           return RUN_ALL_TESTS();
         }else{
           QApplication app(argc, argv);
-          std::shared_ptr<EvoGUI> gui = std::make_shared<EvoGUI>();
+          std::shared_ptr<Life::EvoGUI> gui = std::make_shared<Life::EvoGUI>();
           return app.exec();
         }
     }
   QApplication app(argc, argv);
-  std::shared_ptr<EvoGUI> gui = std::make_shared<EvoGUI>();
+  std::shared_ptr<Life::EvoGUI> gui = std::make_shared<Life::EvoGUI>();
   return app.exec();
 }
 

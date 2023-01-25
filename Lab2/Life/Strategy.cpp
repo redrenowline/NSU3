@@ -1,5 +1,7 @@
 #include "Strategy.h"
 
+namespace Life{
+
 void Strategy::exec(){
 
 }
@@ -36,4 +38,6 @@ SaveFieldStrategy::SaveFieldStrategy(std::shared_ptr<Field> f, std::string s): f
 void SaveFieldStrategy::exec(){
   FieldSaver saver;
   saver.save(this->path, *(fd.get()));
+}
+
 }

@@ -9,6 +9,8 @@
 #include "FieldLoader.h"
 #include "FieldSaver.h"
 
+namespace Life{
+
 class Strategy
 {
 public:
@@ -65,5 +67,7 @@ private:
   std::shared_ptr<Field> fd;
   std::string path;
 };
+
+}
 
 #endif // COMMAND_H

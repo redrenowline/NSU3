@@ -1,5 +1,7 @@
 #include "TestCore.h"
 
+namespace Life{
+
 TestCore::TestCore(){
 
 }
@@ -73,4 +75,6 @@ Specification TestCore::generateBaseSpecification(){
   sp.setcrReason(sr);
   sp.setsrReason(cr);
   return sp;
+}
+
 }

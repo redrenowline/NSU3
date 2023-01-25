@@ -3,6 +3,8 @@
 
 #include "Core.h"
 
+namespace Life{
+
 class TestCore{
 
 public:
@@ -24,4 +26,5 @@ private:
 
 };
 
+}
 #endif // TESTCORE_H

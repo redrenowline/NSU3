@@ -1,5 +1,6 @@
 #include "OfflineGUI.h"
 
+namespace Life{
 
 OfflineGUI::OfflineGUI(){
   bottomLayout = std::make_shared<QVBoxLayout>();
@@ -21,4 +22,6 @@ std::shared_ptr<QPushButton> OfflineGUI::getUploadBtn(){
 
 int OfflineGUI::getTiksCount(){
   return lineForData->text().toInt();
+}
+
 }

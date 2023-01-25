@@ -10,6 +10,8 @@
 
 #include <iostream>
 
+namespace Life{
+
 class MenuGUI : public QWidget
 {
 
@@ -46,5 +48,6 @@ private:
 
   void identButtons();
 };
+}
 
 #endif // MENUGUI_H

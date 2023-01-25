@@ -12,6 +12,8 @@
 
 #include <iostream>
 
+namespace Life{
+
 class OfflineGUI : public QWidget{
   Q_OBJECT
 
@@ -31,5 +33,7 @@ private:
 
   std::shared_ptr<QBoxLayout> bottomLayout;
 };
+
+}
 
 #endif // OFFLINEGUI_H

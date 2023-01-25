@@ -1,5 +1,7 @@
 #include "MainGUI.h"
 
+namespace Life{
+
 MainGUI::MainGUI(std::string n) : QWidget(), nam(n)
 {
   this->setGeometry(0,0,SCREEN_SIZE.width(), SCREEN_SIZE.height());
@@ -88,4 +90,4 @@ std::shared_ptr<QPushButton> MainGUI::getSaveBtn(){
   return saveBtn;
 }
 
-
+}
