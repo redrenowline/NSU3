@@ -19,6 +19,9 @@ public:
   ~EvoGUI();
 
 private:
+  unsigned int timerDist = 1000;
+  const int dTimer = 200;
+
   std::unique_ptr<MenuGUI> menuGUI;
   std::unique_ptr<MainGUI> mainGUI;
   std::unique_ptr<ExamplesGUI> examplesGUI;
@@ -41,19 +44,23 @@ private:
 
 
   const char* DIALOGFILEOPEN = "Укажите файл с вселенной";
+  const char* DIALOGSAVE = "Сохранить файл в ";
   const char* DIALOGFILETYPE = "Life файлы (*.life)";
 
 private slots:
   void addExitStrategy(); // creating ExitStrategy and try to execute that in the Core, the result is closing programm
   void addUploadStrategy(std::string path); // creating UploadStrategy and try to execute that in the Core, the result is uploading field in the Core
-  void addSaveStrategy();
+  void addSaveStrategy(std::string path);
   void addNextTikStrategy();
   void addNextTiksStrategy();
 
   void showUploadExamples();
   void UploadExamples();
   void UploadFromFile();
+  void SaveField();
 
   void startTimer();
   void stopTimer();
+  void addTimeToTimer();
+  void removeTimeToTimer();
 };

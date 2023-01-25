@@ -17,8 +17,8 @@ public:
   const char* INDICATOR = "#Life 1.06";
   const char* NAMEINDICATOR = "#N";
   const char* RULESINDICATOR = "#R";
-  const char* BIRTHINDICATOR = "#B";
-  const char* SURVIVEINDICATOR = "#S";
+  const char* BIRTHINDICATOR = "B";
+  const char* SURVIVEINDICATOR = "/S";
 
 private:
 

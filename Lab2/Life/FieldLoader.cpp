@@ -42,7 +42,7 @@ Specification FieldLoader::readRules(std::ifstream &fl) {
     if (tmp_s.size() == 0)
       throw std::exception();
   }
-  pos = tmp_s.find("B");
+  pos = tmp_s.find(BIRTHINDICATOR);
   if (pos == -1)
     throw std::exception();
   tmp_s.erase(pos, 1);
@@ -57,7 +57,7 @@ Specification FieldLoader::readRules(std::ifstream &fl) {
   }
   sp.setcrReason(temp);
   temp.clear();
-  if (tmp_s.size() == 0 || tmp_s.find("/S") == -1)
+  if (tmp_s.size() == 0 || tmp_s.find(SURVIVEINDICATOR) == -1)
     throw std::exception();
   tmp_s.erase(0, 2);
   if (tmp_s.size() == 0)

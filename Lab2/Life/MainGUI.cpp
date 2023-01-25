@@ -16,12 +16,18 @@ void MainGUI::identLeftLayout(){
   nextTiksBtn = std::make_shared<QPushButton>(this);
   startTimerBtn = std::make_shared<QPushButton>(this);
   stopTimerBtn = std::make_shared<QPushButton>(this);
+  speedUpBtn = std::make_shared<QPushButton>(this);
+  slowDownBtn = std::make_shared<QPushButton>(this);
+  saveBtn = std::make_shared<QPushButton>(this);
 
   enterItarations->setValidator(new QIntValidator(0,100,this));
   nextTikBtn->setText(NEXTTIKBTN_CHAR);
   nextTiksBtn->setText(NEXTTIKSBTN_CHAR);
   startTimerBtn->setText(STARTTIMER_CHAR);
   stopTimerBtn->setText(STOPTIMER_CHAR);
+  speedUpBtn->setText(SPEEDUP_CHAR);
+  slowDownBtn->setText(SLOWDOWN_CHAR);
+  saveBtn->setText(SAVE_CHAR);
 
   name->setGeometry(NAME_RECT);
   enterItarations->setGeometry(ENTERITR_RECT);
@@ -29,6 +35,9 @@ void MainGUI::identLeftLayout(){
   nextTiksBtn->setGeometry(NEXTIKSBTN_RECT);
   startTimerBtn->setGeometry(STARTTIMER_RECT);
   stopTimerBtn->setGeometry(STOPTIMER_RECT);
+  speedUpBtn->setGeometry(SPEEDUP_RECT);
+  slowDownBtn->setGeometry(SLOWDOWN_RECT);
+  saveBtn->setGeometry(SAVE_RECT);
 }
 
 void MainGUI::identMainLayout(){
@@ -68,7 +77,15 @@ std::shared_ptr<QPushButton> MainGUI::getStopTimerBtn(){
   return stopTimerBtn;
 }
 
+std::shared_ptr<QPushButton> MainGUI::getSpeedUpBtn(){
+  return speedUpBtn;
+}
+std::shared_ptr<QPushButton> MainGUI::getSlowDownBtn(){
+  return slowDownBtn;
+}
 
-
+std::shared_ptr<QPushButton> MainGUI::getSaveBtn(){
+  return saveBtn;
+}
 
 

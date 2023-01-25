@@ -28,9 +28,10 @@ Field::~Field() {
 
 unsigned int Field::calcLocalicity(unsigned int x, unsigned int y) {
   unsigned int res = 0;
+  TorusCoordinatesCalculator calc(height, width);
   for (int i = -1; i < 2; i++)
     for (int j = -1; j < 2; j++)
-      res += (mass[x+i][y+j] == cType::ALIVE) ? 1 : 0;
+      res += (mass[calc.calcX(x+i)][calc.calcY(y+j)] == cType::ALIVE) ? 1 : 0;
   if (mass[x][y] == cType::ALIVE)
     return res - 1;
   return res;
@@ -51,8 +52,8 @@ bool Field::calcBirth(unsigned int neigh) {
 void Field::processing() {
   std::vector<std::vector<cType>> cp_mass(mass);
 
-  for (unsigned int i = 1; i < height - 1; i++)
-    for (unsigned int j = 1; j < width - 1; j++) {
+  for (unsigned int i = 0; i < height; i++)
+    for (unsigned int j = 0; j < width; j++) {
       unsigned int localicity = calcLocalicity(i, j);
       switch (mass[i][j]) {
 
@@ -117,4 +118,26 @@ void Specification::setcrReason(std::vector<unsigned char> vec){
 void Specification::setsrReason(std::vector<unsigned char> vec){
   this->srReason = vec;
   this->srSize = vec.size();
+}
+
+TorusCoordinatesCalculator::TorusCoordinatesCalculator(int arg1, int arg2): height(arg1), width(arg2){}
+
+unsigned int TorusCoordinatesCalculator::calcX(int x){
+  if(x == -1){
+    return height-1;
+  }
+  if(x == height){
+      return 0;
+  }
+  return x;
+}
+
+unsigned int TorusCoordinatesCalculator::calcY(int y){
+  if(y == -1){
+    return width-1;
+  }
+  if(y == width){
+      return 0;
+  }
+  return y;
 }

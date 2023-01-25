@@ -33,6 +33,9 @@ public:
   std::shared_ptr<QPushButton> getNextTiksBtn();
   std::shared_ptr<QPushButton> getStartTimerBtn();
   std::shared_ptr<QPushButton> getStopTimerBtn();
+  std::shared_ptr<QPushButton> getSpeedUpBtn();
+  std::shared_ptr<QPushButton> getSlowDownBtn();
+  std::shared_ptr<QPushButton> getSaveBtn();
 
 private:
 
@@ -40,17 +43,23 @@ private:
   const char* NEXTTIKBTN_CHAR = "Шаг";
   const char* NEXTTIKSBTN_CHAR = "N шагов";
   const char* STARTTIMER_CHAR = "Вкл. таймер";
-  const char* STOPTIMER_CHAR = "Выклю таймер";
+  const char* STOPTIMER_CHAR = "Выкл. таймер";
+  const char* SPEEDUP_CHAR = "Ускорить";
+  const char* SLOWDOWN_CHAR = "Замедлить";
+  const char* SAVE_CHAR = "Сохранить";
 
   const QSize SCREEN_SIZE = QSize(800,600);
 
-  const QRect NAME_RECT = QRect(10,0,100,20);
+  const QRect NAME_RECT = QRect(5,50,90,20);
   const QRect NUMLABEL_RECT = QRect(5,50,90,20);
   const QRect ENTERITR_RECT = QRect(5,75,90,20);
   const QRect NEXTIKBTN_RECT = QRect(5,95,90,20);
   const QRect NEXTIKSBTN_RECT = QRect(5,115,90,20);
   const QRect STARTTIMER_RECT = QRect(5, 135, 90, 20);
   const QRect STOPTIMER_RECT = QRect(5, 155, 90, 20);
+  const QRect SPEEDUP_RECT = QRect(5, 175, 90, 20);
+  const QRect SLOWDOWN_RECT = QRect(5, 195, 90, 20);
+  const QRect SAVE_RECT = QRect(5, 215, 90, 20);
   const QRect SCENE_RECT = QRect(100,0,700,600);
 
   std::string nam;
@@ -63,6 +72,9 @@ private:
   std::shared_ptr<QPushButton> nextTiksBtn;
   std::shared_ptr<QPushButton> startTimerBtn;
   std::shared_ptr<QPushButton> stopTimerBtn;
+  std::shared_ptr<QPushButton> speedUpBtn;
+  std::shared_ptr<QPushButton> slowDownBtn;
+  std::shared_ptr<QPushButton> saveBtn;
 
   std::shared_ptr<QGraphicsView> viewScene;
   std::shared_ptr<QGraphicsScene> scene;

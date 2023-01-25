@@ -27,8 +27,19 @@ private:
   std::vector<unsigned char> srReason; // surviveReason - count of nearby alive cells for surviving
 };
 
+class TorusCoordinatesCalculator{
+public:
+  TorusCoordinatesCalculator(int arg1, int arg2);
+  unsigned int calcX(int x);
+  unsigned int calcY(int y);
+private:
+  unsigned int width;
+  unsigned int height;
+};
+
 class Field {
   friend class FieldLoader;
+  friend class FieldSaver;
 
 public:
 

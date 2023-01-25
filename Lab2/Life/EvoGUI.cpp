@@ -25,6 +25,9 @@ void EvoGUI::identMainGUI(){
   connect(mainGUI->getNextTiksBtn().get(), SIGNAL(released()), this, SLOT(addNextTiksStrategy()));
   connect(mainGUI->getStartTimerBtn().get(), SIGNAL(released()), this, SLOT(startTimer()));
   connect(mainGUI->getStopTimerBtn().get(), SIGNAL(released()), this, SLOT(stopTimer()));
+  connect(mainGUI->getSpeedUpBtn().get(), SIGNAL(released()), this, SLOT(removeTimeToTimer()));
+  connect(mainGUI->getSlowDownBtn().get(), SIGNAL(released()), this, SLOT(addTimeToTimer()));
+  connect(mainGUI->getSaveBtn().get(), SIGNAL(released()), this, SLOT(SaveField()));
 }
 
 void EvoGUI::closeMainGUI(){
@@ -59,13 +62,26 @@ void EvoGUI::startTimer(){
   connect(timer.get(), SIGNAL(timeout()), this, SLOT(addNextTikStrategy()));
   mainGUI->getNextTikBtn()->setEnabled(false);
   mainGUI->getNextTiksBtn()->setEnabled(false);
-  timer->start(500);
+  timer->start(timerDist);
 }
 
 void EvoGUI::stopTimer(){
   timer->stop();
   mainGUI->getNextTikBtn()->setEnabled(true);
   mainGUI->getNextTiksBtn()->setEnabled(true);
+}
+
+void EvoGUI::addTimeToTimer(){
+  timerDist += dTimer;
+  startTimer();
+}
+void EvoGUI::removeTimeToTimer(){
+  if(timerDist <= dTimer){
+      timerDist = 100;
+      startTimer();
+  }
+  timerDist -= dTimer;
+  startTimer();
 }
 
 void EvoGUI::addExitStrategy(){
@@ -84,8 +100,13 @@ void EvoGUI::addUploadStrategy(std::string path){
   reDrawFieled();
 }
 
-void EvoGUI::addSaveStrategy(){
-
+void EvoGUI::addSaveStrategy(std::string path){
+  try{
+    core->execStrategy(std::make_shared<SaveFieldStrategy>(core->getField(), path));
+  }catch(std::exception e){
+    std::cerr << e.what() << "\n";
+    return;
+  }
 }
 
 void EvoGUI::addNextTikStrategy(){
@@ -120,6 +141,11 @@ void EvoGUI::UploadExamples(){
   std::string s = examplesGUI->GetExamplePath();
   addUploadStrategy(s);
   closeExamplesGUI();
+}
+
+void EvoGUI::SaveField(){
+  std::string s = QFileDialog::getSaveFileName(0,QObject::tr(DIALOGSAVE), QDir::homePath(), QObject::tr(DIALOGFILETYPE)).toStdString();
+  addSaveStrategy(s);
 }
 
 EvoGUI::~EvoGUI(){
