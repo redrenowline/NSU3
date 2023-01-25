@@ -40,6 +40,7 @@ private:
 class Field {
   friend class FieldLoader;
   friend class FieldSaver;
+  friend class TestCore;
 
 public:
 
