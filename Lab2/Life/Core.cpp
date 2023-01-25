@@ -4,11 +4,9 @@
 
 Core::Core() {
   fd = std::make_shared<Field>();
-
 }
 
 void Core::execStrategy(std::shared_ptr<Strategy> cmd){
-  std::cout << "New strategy has been get\n";
   cmd->exec();
 }
 
