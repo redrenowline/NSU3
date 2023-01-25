@@ -5,6 +5,7 @@
 int main(int argc, char* argv[])
 {
   QApplication app(argc, argv);
-  EvoGUI* gui = new EvoGUI();
+  std::shared_ptr<EvoGUI> gui = std::make_shared<EvoGUI>();
   return app.exec();
 }
+

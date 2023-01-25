@@ -6,8 +6,7 @@
 #include "Field.h"
 #include "Strategy.h"
 
-class Core : public QObject{
-  Q_OBJECT
+class Core{
 public:
 
   Core();
