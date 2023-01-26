@@ -6,6 +6,8 @@
 
 #include "Cells.h"
 
+namespace Life{
+
 class Specification {
 public:
   Specification();
@@ -73,3 +75,5 @@ private:
 
 protected:
 };
+
+}

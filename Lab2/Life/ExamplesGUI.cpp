@@ -1,5 +1,7 @@
 #include "ExamplesGUI.h"
 
+
+namespace Life{
 ExamplesGUI::ExamplesGUI() : QWidget(){
   bottomLayout = std::make_shared<QVBoxLayout>();
   uploadExampleBtn = std::make_shared<QPushButton>(UPLOAD_EXAMPLES_BTN_CHAR);
@@ -58,4 +60,5 @@ std::string Example::getName(){
 }
 std::string Example::getPath(){
   return path;
+}
 }

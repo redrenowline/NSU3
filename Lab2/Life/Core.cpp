@@ -2,6 +2,7 @@
 //
 #include "Core.h"
 
+namespace Life{
 Core::Core() {
   fd = std::make_shared<Field>();
 }
@@ -16,4 +17,5 @@ std::shared_ptr<Field> Core::getField(){
 
 Core::~Core() {
 
+}
 }

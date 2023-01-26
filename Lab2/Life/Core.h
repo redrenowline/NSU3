@@ -6,6 +6,8 @@
 #include "Field.h"
 #include "Strategy.h"
 
+namespace Life{
+
 class Core{
 public:
 
@@ -22,3 +24,4 @@ private:
 
 };
 
+}

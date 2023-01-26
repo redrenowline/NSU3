@@ -1,5 +1,7 @@
 #include "FieldLoader.h"
 
+namespace Life{
+
 bool FieldLoader::checkIdentity(std::ifstream &fl) {
   std::string tmp_s;
   std::getline(fl, tmp_s);
@@ -96,4 +98,5 @@ Field FieldLoader::load(std::string path) {
   }
   fl.close();
   return res;
+}
 }

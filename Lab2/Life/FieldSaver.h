@@ -7,6 +7,8 @@
 
 #include "Field.h"
 
+namespace Life{
+
 class FieldSaver{
 
 public:
@@ -27,3 +29,5 @@ protected:
 };
 
 #endif // FIELDSAVER_H
+
+}

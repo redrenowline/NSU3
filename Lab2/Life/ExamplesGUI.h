@@ -16,6 +16,8 @@
 
 #include <iostream>
 
+namespace Life{
+
 class Example{
 public:
   Example(std::string, std::string);
@@ -54,5 +56,7 @@ private:
   void identComboBox();
   void loadExamples();
 };
-
+}
 #endif // EXAMPLESGUI_H
+
+

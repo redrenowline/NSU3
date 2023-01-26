@@ -5,6 +5,8 @@
 
 #include "Field.h"
 
+namespace Life{
+
 class FieldLoader
 {
 public:
@@ -23,3 +25,5 @@ private:
   Specification readRules(std::ifstream&);
 protected:
 };
+
+}

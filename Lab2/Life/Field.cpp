@@ -1,5 +1,6 @@
 #include "Field.h"
 
+namespace Life{
 Field::Field(){
   this->height = 0;
   this->width = 0;
@@ -140,4 +141,5 @@ unsigned int TorusCoordinatesCalculator::calcY(int y){
       return 0;
   }
   return y;
+}
 }

@@ -1,5 +1,6 @@
 #include "FieldSaver.h"
 
+namespace Life{
 FieldSaver::FieldSaver(){
 
 }
@@ -25,4 +26,5 @@ void FieldSaver::save(std::string path, Field &fd){
   }
   fl.close();
   return;
+}
 }

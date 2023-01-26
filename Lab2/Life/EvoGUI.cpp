@@ -1,4 +1,5 @@
 #include "EvoGUI.h"
+namespace Life{
 
 EvoGUI::EvoGUI(){
   core = std::make_unique<Core>();
@@ -54,7 +55,6 @@ void EvoGUI::reDrawFieled(){
             mainGUI->drawCell(i,j);
         }
     }
-  mainGUI->drawCell(50,50);
 }
 
 void EvoGUI::startTimer(){
@@ -150,4 +150,5 @@ void EvoGUI::SaveField(){
 
 EvoGUI::~EvoGUI(){
 
+}
 }

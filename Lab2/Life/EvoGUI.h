@@ -12,6 +12,8 @@
 #include "Strategy.h"
 #include "Core.h"
 
+namespace Life{
+
 class EvoGUI : public QWidget{
   Q_OBJECT
 public:
@@ -64,3 +66,5 @@ private slots:
   void addTimeToTimer();
   void removeTimeToTimer();
 };
+
+}
